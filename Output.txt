@@ -1,0 +1,41 @@
+Dataset loaded successfully!
+Training set shape: (14622, 3)
+Testing set shape: (3656, 3)
+Class distribution in training set:
+ target
+1    13333
+2     1289
+Name: count, dtype: int64
+✅ Fixed! X_train: (14573, 11, 1), y_train: (14573,)
+✅ Fixed! X_test: (3607, 11, 1), y_test: (3607,)
+Class distribution after SMOTE: Counter({0: 13287, 1: 13287})
+Epoch 1/33
+208/208 [==============================] - 171s 724ms/step - loss: 0.6795 - accuracy: 0.5669 - val_loss: 0.6237 - val_accuracy: 0.5351 - lr: 5.0000e-04
+Epoch 2/33
+208/208 [==============================] - 110s 530ms/step - loss: 0.6676 - accuracy: 0.5882 - val_loss: 0.7488 - val_accuracy: 0.3180 - lr: 5.0000e-04
+Epoch 3/33
+208/208 [==============================] - 110s 529ms/step - loss: 0.6644 - accuracy: 0.5900 - val_loss: 0.6215 - val_accuracy: 0.6060 - lr: 5.0000e-04
+Epoch 4/33
+208/208 [==============================] - 110s 530ms/step - loss: 0.6627 - accuracy: 0.5977 - val_loss: 0.6951 - val_accuracy: 0.4985 - lr: 5.0000e-04
+Epoch 5/33
+208/208 [==============================] - 108s 518ms/step - loss: 0.6616 - accuracy: 0.5982 - val_loss: 0.6488 - val_accuracy: 0.5614 - lr: 5.0000e-04
+Epoch 6/33
+208/208 [==============================] - 193s 932ms/step - loss: 0.6617 - accuracy: 0.5984 - val_loss: 0.6098 - val_accuracy: 0.6407 - lr: 5.0000e-04
+Epoch 7/33
+208/208 [==============================] - 107s 516ms/step - loss: 0.6603 - accuracy: 0.6003 - val_loss: 0.7286 - val_accuracy: 0.3978 - lr: 5.0000e-04
+...
+113/113 [==============================] - 7s 58ms/step - loss: 0.4713 - accuracy: 0.8065
+Test Loss: 0.47130072116851807
+Test Accuracy: 0.8064873814582825
+113/113 [==============================] - 11s 57ms/step
+
+
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.94      0.85      0.89      3290
+           1       0.20      0.40      0.27       317
+
+    accuracy                           0.81      3607
+   macro avg       0.57      0.62      0.58      3607
+weighted avg       0.87      0.81      0.83      3607
